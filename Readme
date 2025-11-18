@@ -1,0 +1,82 @@
+AiezzaUtils
+AiezzaUtils is a lightweight collection of Swift utilities designed to simplify common development tasks.
+It includes helper modules such as email validation, date formatting utilities, and optional SwiftUI UI components.
+The package is fully modular, documented, and ready to be imported into any iOS project via Swift Package Manager (SPM).
+🔗 Installation (Swift Package Manager)
+You can add AiezzaUtils to your project directly through Xcode:
+File → Add Packages…
+Then enter the URL:
+https://github.com/SEU_USUARIO/AiezzaUtils.git
+Or add it directly to your Package.swift:
+.package(url: "https://github.com/SEU_USUARIO/AiezzaUtils.git", from: "1.0.0")
+Then include it inside your target:
+.target(
+    name: "YourApp",
+    dependencies: [
+        .product(name: "AiezzaUtils", package: "AiezzaUtils"),
+        .product(name: "AiezzaUI", package: "AiezzaUtils") // if using the UI module
+    ]
+)
+🧰 Modules Included
+✔️ AiezzaUtils
+Core utilities such as:
+EmailValidator
+import AiezzaUtils
+
+let isValid = EmailValidator.isValid("example@email.com")
+print(isValid) // true or false
+DateFormatterUtils
+import AiezzaUtils
+
+let date = Date()
+let formatted = DateFormatterUtils.formattedString(from: date)
+print(formatted) // "2025-01-01"
+🎨 AiezzaUI (optional module)
+Reusable SwiftUI components, such as:
+AsyncImageView
+import SwiftUI
+import AiezzaUI
+
+struct ContentView: View {
+    var body: some View {
+        AsyncImageView(url: URL(string: "https://picsum.photos/300")!)
+            .frame(width: 200, height: 200)
+            .clipShape(RoundedRectangle(cornerRadius: 16))
+    }
+}
+🧪 Unit Tests
+This package includes unit tests demonstrating:
+Email validation correctness
+Date parsing and formatting consistency
+UI behavior tests (if applicable)
+To run tests:
+⌘ + U (Xcode)
+or
+swift test
+📁 Project Structure
+AiezzaUtils/
+ ├─ Sources/
+ │   ├─ AiezzaUtils/
+ │   │    ├─ EmailValidator.swift
+ │   │    ├─ DateFormatterUtils.swift
+ │   ├─ AiezzaUI/
+ │        └─ AsyncImageView.swift
+ ├─ Tests/
+ │   ├─ AiezzaUtilsTests/
+ │   └─ AiezzaUITests/
+ ├─ Package.swift
+ └─ README.md
+🏷️ Versioning
+This project follows Semantic Versioning (SemVer):
+MAJOR – breaking changes
+MINOR – new features
+PATCH – fixes
+Latest stable release: 1.0.0
+📜 License
+This package is available under the MIT License.
+You are free to use, modify, and distribute it.
+🙌 Contributions
+Feedback, suggestions, and pull requests are welcome!
+Feel free to open issues for bugs, enhancements, or questions.
+🌐 About
+Created by Luan Aiezza as part of his studies and practice in Swift Package Manager, modularization, and reusable architecture for iOS development.
