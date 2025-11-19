@@ -1,6 +1,6 @@
 AiezzaUtils
 
-[CI](https://github.com/Luan-Aiezza/AiezzaUtils/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/Luan-Aiezza/AiezzaUtils/actions/workflows/ci.yml/badge.svg)
 ![Lint](https://github.com/Luan-Aiezza/AiezzaUtils/actions/workflows/lint.yml/badge.svg)
 ![Release](https://github.com/Luan-Aiezza/AiezzaUtils/actions/workflows/release.yml/badge.svg)
 
