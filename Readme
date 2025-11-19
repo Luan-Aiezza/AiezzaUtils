@@ -1,4 +1,9 @@
 AiezzaUtils
+
+![CI](https://github.com/SEU_USUARIO/AiezzaUtils/actions/workflows/ci.yml/badge.svg)
+![Lint](https://github.com/SEU_USUARIO/AiezzaUtils/actions/workflows/lint.yml/badge.svg)
+![Release](https://github.com/SEU_USUARIO/AiezzaUtils/actions/workflows/release.yml/badge.svg)
+
 AiezzaUtils is a lightweight collection of Swift utilities designed to simplify common development tasks.
 It includes helper modules such as email validation, date formatting utilities, and optional SwiftUI UI components.
 The package is fully modular, documented, and ready to be imported into any iOS project via Swift Package Manager (SPM).
@@ -25,10 +30,6 @@ MAJOR – breaking changes
 MINOR – new features
 PATCH – fixes
 Latest stable release: 1.0.0
-
-![CI](https://github.com/SEU_USUARIO/AiezzaUtils/actions/workflows/ci.yml/badge.svg)
-![Lint](https://github.com/SEU_USUARIO/AiezzaUtils/actions/workflows/lint.yml/badge.svg)
-![Release](https://github.com/SEU_USUARIO/AiezzaUtils/actions/workflows/release.yml/badge.svg)
 
 📜 License
 This package is available under the MIT License.
