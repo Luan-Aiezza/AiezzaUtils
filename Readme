@@ -26,6 +26,10 @@ MINOR – new features
 PATCH – fixes
 Latest stable release: 1.0.0
 
+![CI](https://github.com/SEU_USUARIO/AiezzaUtils/actions/workflows/ci.yml/badge.svg)
+![Lint](https://github.com/SEU_USUARIO/AiezzaUtils/actions/workflows/lint.yml/badge.svg)
+![Release](https://github.com/SEU_USUARIO/AiezzaUtils/actions/workflows/release.yml/badge.svg)
+
 📜 License
 This package is available under the MIT License.
 You are free to use, modify, and distribute it.
