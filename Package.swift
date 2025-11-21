@@ -13,7 +13,7 @@ let package = Package(
     products: [
         .library(
             name: "AiezzaUtils",
-            targets: ["CoreUtils"]   // antes era "AiezzaUtils"
+            targets: ["CoreUtils"]
         ),
         .library(
             name: "AiezzaUI",
@@ -22,7 +22,7 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        // Core (antes AiezzaUtils)
+        // Core module
         .target(
             name: "CoreUtils",
             path: "Sources/CoreUtils"
@@ -33,6 +33,20 @@ let package = Package(
             name: "AiezzaUI",
             dependencies: ["CoreUtils"],
             path: "Sources/AiezzaUI"
+        ),
+
+        // MARK: - Test Targets
+
+        .testTarget(
+            name: "CoreUtilsTests",
+            dependencies: ["CoreUtils"],
+            path: "Sources/Tests/CoreUtilsTests"
+        ),
+
+        .testTarget(
+            name: "CoreUITests",
+            dependencies: ["AiezzaUI"],
+            path: "Sources/Tests/CoreUITests"
         )
     ]
 )
