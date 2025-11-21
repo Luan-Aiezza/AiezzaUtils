@@ -4,7 +4,8 @@
 //
 //  Created by Luan Aiezza on 18/11/25.
 //
-
+#if os(iOS)
+import UIKit
 import SwiftUI
 
 public struct AsyncImageView: View {
@@ -38,3 +39,4 @@ public struct AsyncImageView: View {
         }
     }
 }
+#endif
