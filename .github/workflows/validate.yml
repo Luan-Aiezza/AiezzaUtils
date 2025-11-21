@@ -1,4 +1,6 @@
-name: Swift Package Validation
+- name: Validate Package
+  run: swift package describe
+  working-directory: AiezzaUtils
 
 on:
   pull_request:
