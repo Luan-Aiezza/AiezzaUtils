@@ -1,7 +1,7 @@
 AiezzaUtils
 
 ![CI](https://github.com/Luan-Aiezza/AiezzaUtils/actions/workflows/ci.yml/badge.svg)
-![Lint](https://github.com/Luan-Aiezza/AiezzaUtils/actions/workflows/lint.yml/badge.svg)
+![Lint](https://img.shields.io/badge/LintCode-13B4FF.svg?style=for-the-badge&logo=LintCode&logoColor=white)
 ![Release](https://github.com/Luan-Aiezza/AiezzaUtils/actions/workflows/release.yml/badge.svg)
 
 AiezzaUtils is a lightweight collection of Swift utilities designed to simplify common development tasks.
@@ -24,12 +24,28 @@ Then include it inside your target:
     ]
 )
 
+🧪 Tests (SwiftTests + UI Tests)
+The package includes a growing suite of automated tests using Swift Testing, covering both Core utilities and SwiftUI components.
+✔️ CoreUtils Tests
+The CoreUtilsTests suite validates:
+Email validation rules
+Multiple supported email formats
+String transformations (trimmed, isNotEmpty)
+Safe type casting (safeCast)
+Date conversions (timestamp, date(from:))
+
+🧩 UI Tests (SwiftUI Components)
+The UI module (AiezzaUI) also contains tests validating:
+Correct initialization of AsyncImageView
+Placeholder rendering behavior
+View state before/after loading asynchronous content
+
 🏷️ Versioning
 This project follows Semantic Versioning (SemVer):
 MAJOR – breaking changes
 MINOR – new features
 PATCH – fixes
-Latest stable release: 1.0.0
+Latest stable release: 1.0.1
 
 📜 License
 This package is available under the MIT License.
