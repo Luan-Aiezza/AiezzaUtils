@@ -4,7 +4,7 @@
 //
 //  Created by Luan Aiezza on 18/11/25.
 //
-#if os(iOS)
+#if canImport(UIKit)
 import UIKit
 import SwiftUI
 
