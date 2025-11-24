@@ -1,7 +1,7 @@
 AiezzaUtils
 
 ![CI](https://github.com/Luan-Aiezza/AiezzaUtils/actions/workflows/ci.yml/badge.svg)
-!(https://img.shields.io/badge/LintCode-13B4FF.svg?style=for-the-badge&logo=LintCode&logoColor=white)
+https://img.shields.io/badge/ESLint-4B32C3.svg?style=for-the-badge&logo=ESLint&logoColor=white
 ![Release](https://github.com/Luan-Aiezza/AiezzaUtils/actions/workflows/release.yml/badge.svg)
 
 AiezzaUtils is a lightweight collection of Swift utilities designed to simplify common development tasks.
