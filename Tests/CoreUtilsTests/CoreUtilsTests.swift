@@ -51,7 +51,7 @@ struct CoreUtilsTests {
     func testIsNotEmpty() {
         #expect("Hello".isNotEmpty)
         #expect(!"".isNotEmpty)
-        #expect(!"   ".isNotEmpty)   // depende da sua implementação
+        #expect(!"   ".isNotEmpty)
     }
 
     // MARK: - DateUtils (exemplo)
