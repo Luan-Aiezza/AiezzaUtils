@@ -40,13 +40,13 @@ let package = Package(
         .testTarget(
             name: "CoreUtilsTests",
             dependencies: ["CoreUtils"],
-            path: "Sources/Tests/CoreUtilsTests"
+            path: "Tests/CoreUtilsTests"
         ),
 
         .testTarget(
             name: "CoreUITests",
             dependencies: ["AiezzaUI"],
-            path: "Sources/Tests/CoreUITests"
+            path: "Tests/CoreUITests"
         )
     ]
 )
