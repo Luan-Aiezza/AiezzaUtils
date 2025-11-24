@@ -8,23 +8,28 @@
 import UIKit
 import SwiftUI
 
-public struct AsyncImageView: View {
+public struct AsyncImageView<Placeholder: View>: View {
     let url: URL
+    let placeholder: () -> Placeholder
     
-    @State private var image: UIImage?
+    @State private var uiImage: UIImage?
     
-    public init(url: URL) {
+    public init(
+        url: URL,
+        @ViewBuilder placeholder: @escaping () -> Placeholder
+    ) {
         self.url = url
+        self.placeholder = placeholder
     }
     
     public var body: some View {
         Group {
-            if let image {
-                Image(uiImage: image)
+            if let uiImage {
+                Image(uiImage: uiImage)
                     .resizable()
                     .scaledToFit()
             } else {
-                ProgressView()
+                placeholder()
                     .task { await loadImage() }
             }
         }
@@ -33,10 +38,11 @@ public struct AsyncImageView: View {
     private func loadImage() async {
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
-            self.image = UIImage(data: data)
+            self.uiImage = UIImage(data: data)
         } catch {
             print("Failed to load image:", error)
         }
     }
 }
+
 #endif
